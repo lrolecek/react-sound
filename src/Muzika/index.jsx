@@ -9,7 +9,7 @@ const Muzika = () => {
 
 	const [play, {stop}] = useSound('/assets/dingdingdang.mp3', {
 		onend: () => {
-
+			setIsPlaying(false);
 		}
 	});
 
